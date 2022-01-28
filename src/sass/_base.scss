@@ -1,0 +1,64 @@
+// @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Kufi+Arabic&display=swap");
+@import "./variables";
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    //550px
+    @media only screen and(max-width: 34.38em) {
+        font-size: 50%;
+    }
+    //400px
+    @media only screen and(max-width: 25em) {
+        font-size: 40%;
+    }
+    //290p x
+    @media only screen and(max-width: 18.12em) {
+        font-size: 35%;
+    }
+    //250 px
+    @media only screen and(max-width: 15.62em) {
+        font-size: 25%;
+    }
+}
+
+body {
+    height: 100%;
+    background-color: var(--color-background);
+    font-family: "Josefin Sans", sans-serif !important;
+    position: relative;
+}
+
+#root {
+    height: 100%;
+}
+
+:root {
+    height: 100%;
+    --color-text-accent:#{$color-white};
+    --color-background: #{$color-gray-very-light-LM};
+    --color-task-primary: #{$color-white};
+    --color-task-secondary: #{$color-gray-light-LM};
+    --color-text-primary: #{$color-gray-dark-LM};
+    --color-text-secondary: #{$color-gray-LM};
+}
+
+.dark {
+    --color-background: #{$color-blue-very-dark};
+    --color-task-primary: #{$color-blue-dark};
+    --color-task-secondary: #{$color-gray-dark-DM};
+    --color-text-primary: #{$color-gray-light-DM};
+    --color-text-secondary: #{$color-gray-DM};
+    --color-hover-footer-text: #{$color-gray-very-light-DM};
+    //
+}

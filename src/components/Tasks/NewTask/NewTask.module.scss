@@ -1,0 +1,46 @@
+.form {
+    &__input {
+        font-family: inherit;
+        width: 55rem;
+        height: 5.5rem;
+        padding: 0 9rem;
+        border: 0rem;
+        font-size: 1.9rem;
+        color: var(--color-text-primary);
+        background-color: var(--color-task-primary);
+        //690px
+        @media only screen and (max-width: 43.12em) {
+            width: 85vw;
+        }
+        //500px
+        @media only screen and (max-width: 31.25em) {
+            width: 90vw;
+        }
+        &::-webkit-input-placeholder {
+            color: var(--color-text-secondary);
+            font-size: 1.7rem;
+        }
+        &:focus {
+            outline: none;
+            &::-webkit-input-placeholder {
+                color: var(--color-task-secondary);
+            }
+        }
+    }
+    &__circle-placeholder {
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid var(--color-task-secondary);
+        position: absolute;
+        border-radius: 50rem;
+        top: 1.2rem;
+        left: 2.5rem;
+    }
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 17rem;
+    transform: translateX(-50%);
+}

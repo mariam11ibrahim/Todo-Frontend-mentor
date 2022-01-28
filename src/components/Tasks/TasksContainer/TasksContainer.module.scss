@@ -1,0 +1,14 @@
+@import "../../../sass/main";
+.tasks-container {
+    width: 55rem;
+    margin: 0 auto;
+    margin-top: -5rem;
+    //690
+    @media only screen and (max-width: 43.12em) {
+        width: 85vw;
+    }
+    //550px
+    @media only screen and (max-width: 31.25em) {
+        width: 90vw;
+    }
+}

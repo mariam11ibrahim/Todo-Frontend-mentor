@@ -1,0 +1,98 @@
+@import "../../../sass/main.scss";
+.task {
+    font-family: inherit;
+    list-style: none;
+    // background-color: var(--color-list);
+    background-color: var(--color-task-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-task-secondary);
+    padding: 2rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    .check-box {
+        font-family: inherit;
+        position: relative;
+        display: flex;
+        align-items: center;
+        &__input {
+            cursor: pointer;
+            width: 3rem;
+            height: 3rem;
+            position: absolute;
+            z-index: 20;
+            top: 0;
+            opacity: 0;
+            transition: all 0.2s ease;
+        }
+        &__custom {
+            &--not-checked {
+                background-color: var(--color-task-primary);
+                border: 1px solid var(--color-task-secondary);
+                border-radius: 50rem;
+                width: 3rem;
+                height: 3rem;
+                position: absolute;
+                z-index: 10;
+                top: 0;
+            }
+            &--checked {
+                display: inline-block;
+                width: 3rem;
+                height: 3rem;
+                background-image: linear-gradient(-45deg, $color-purple, $color-cyan);
+                border: 0.01px solid var(--color-task-primary);
+                border-radius: 50rem;
+                position: relative;
+                transition: all 0.1s;
+            }
+            &-icon {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &__label {
+            font-family: inherit;
+            font-size: 1.9rem;
+            margin-top: 2px;
+            font-weight: $font-weight-regular;
+            color: var(--color-text-primary);
+            position: absolute;
+            left: 8rem;
+            cursor: pointer;
+        }
+    }
+    .check-box__input:hover+.check-box__custom--not-checked {
+        border-color: transparent !important;
+        transform: scale(0.85);
+    }
+    .check-box__input:checked+.check-box__custom--not-checked {
+        opacity: 0 !important;
+    }
+    &__icon-cross {
+        cursor: pointer;
+        display: none;
+        transition: all .4s ease;
+    }
+}
+
+.task:hover .task__icon-cross {
+    display: inline-block;
+}
+
+.done {
+    text-decoration: line-through;
+    color: var(--color-task-secondary) !important;
+}
+
+.empty {
+    color: var(--color-text-secondary) !important;
+    text-align: center;
+    padding: 2rem 0rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--color-task-secondary);
+}

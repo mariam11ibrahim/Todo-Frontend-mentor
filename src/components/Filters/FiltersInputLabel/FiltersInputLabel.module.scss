@@ -1,0 +1,17 @@
+@import "./../../../sass/main.scss";
+.label {
+    cursor: pointer;
+    font-weight: $font-weight-bold !important;
+    color: var(--color-text-secondary);
+    min-width: 5rem;
+    &:hover {
+        color: var(--color-text-primary);
+    }
+}
+
+.active {
+    color: $color-blue-bright;
+    &:hover {
+        color: $color-blue-bright;
+    }
+}

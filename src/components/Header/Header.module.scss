@@ -1,0 +1,35 @@
+@import "../../sass/main.scss";
+.header {
+    // background-image: linear-gradient( to left, rgba($color-blue-bright, 0.85), rgba($color-purple, 0.75)), url("../../assets/bg-LM.jpg");
+    background-image: url("../../assets/bg-desktop-light.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    color: var(--color-text-accent);
+    @media (min-resolution: 72dpi) and (max-width: 18.12em) {
+        background-image: url("../../assets/bg-mobile-light.jpg") !important;
+    }
+    &__icon {
+        margin-top: 0.2rem;
+        font-size: 1.5rem;
+        margin-top: -10rem;
+    }
+    &__heading {
+        font-size: 3rem;
+        margin-top: -10rem;
+        width: 50rem;
+        @media only screen and (max-width: 690px) {
+            width: 40rem;
+        }
+    }
+    &.dark {
+        // background-image: linear-gradient( to right, rgba($color-blue-bright, 0.95), rgba($color-purple, 0.65), rgba($color-purple, 0.95)), url("../../assets/bg-desktop-DM.jpg");
+        background-image: url("../../assets/bg-desktop-dark.jpg") !important;
+        @media (min-resolution: 72dpi) and (max-width: 18.12em) {
+            background-image: url("../../assets/bg-mobile-dark.jpg") !important;
+        }
+    }
+}

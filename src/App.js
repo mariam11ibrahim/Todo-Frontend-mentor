@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import FiltersInputLabelContainer from "./components/Filters/FiltersInputLabelContainer/FiltersInputLabelContainer";
+import Header from "./components/Header/Header";
+import NewTask from "./components/Tasks/NewTask/NewTask";
+import TasksContainer from "./components/Tasks/TasksContainer/TasksContainer";
+import styles from "./App.module.scss"
+import TasksProvider from "./Store/TasksProvider";
+import { useContext } from "react/cjs/react.development";
+import ThemeContext from "./Store/theme-context";
+
+
 
 function App() {
+
+  const themeContext = useContext(ThemeContext);
+  const themeClass = ` ${!themeContext.isLightTheme && styles["dark"]} `
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <TasksProvider>
+      <div className={`${styles["App"]} ${themeClass}`}>
+        <Header />
+        <NewTask />
+        <TasksContainer />
+        <div className={styles["small-screen__filter"]}>
+          <FiltersInputLabelContainer />
+        </div>
+        <p>Drag and drop to reorder list.
+          <br />
+          <span>
+          Developed by Mariam Ibrahim.
+          </span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <p></p>
+      </div>
+    </TasksProvider>
   );
 }
 

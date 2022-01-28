@@ -1,0 +1,42 @@
+@import "./sass/main.scss";
+.App {
+    height: 100vh;
+    background-color: var(--color-background);
+    padding-bottom: 10rem;
+    padding-bottom: 10rem;
+    @media only screen and(max-width: 400px) {
+        padding-bottom: 1rem;
+    }
+    p {
+        font-size: 1.6rem;
+        margin: 5rem auto;
+        text-align: center;
+        line-height: 1.5;
+        color: var(--color-text-secondary);
+        span {
+            font-size: 1.3rem;
+            color: var(--color-task-secondary);
+        }
+    }
+}
+
+.small-screen__filter {
+    display: none;
+    margin: 1rem 0;
+    text-align: center;
+    @media only screen and(max-width: 690px) {
+        display: flex;
+        justify-content: center;
+        div {
+            width: 85vw !important;
+            justify-content: space-around !important;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        div {
+            width: 90vw !important;
+        }
+    }
+}
