@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Todo-Frontend-mentor/static/css/main.21291869.css",
-    "main.js": "/Todo-Frontend-mentor/static/js/main.a4a6309a.js",
-    "static/media/bg-desktop-light.jpg": "/Todo-Frontend-mentor/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
-    "static/media/bg-desktop-dark.jpg": "/Todo-Frontend-mentor/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
-    "index.html": "/Todo-Frontend-mentor/index.html",
-    "main.21291869.css.map": "/Todo-Frontend-mentor/static/css/main.21291869.css.map",
-    "main.a4a6309a.js.map": "/Todo-Frontend-mentor/static/js/main.a4a6309a.js.map"
+    "main.css": "/todo-frontend-mentor/static/css/main.31adace6.css",
+    "main.js": "/todo-frontend-mentor/static/js/main.a4a6309a.js",
+    "static/media/bg-desktop-light.jpg": "/todo-frontend-mentor/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
+    "static/media/bg-desktop-dark.jpg": "/todo-frontend-mentor/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
+    "index.html": "/todo-frontend-mentor/index.html",
+    "main.31adace6.css.map": "/todo-frontend-mentor/static/css/main.31adace6.css.map",
+    "main.a4a6309a.js.map": "/todo-frontend-mentor/static/js/main.a4a6309a.js.map"
   },
   "entrypoints": [
-    "static/css/main.21291869.css",
+    "static/css/main.31adace6.css",
     "static/js/main.a4a6309a.js"
   ]
 }
