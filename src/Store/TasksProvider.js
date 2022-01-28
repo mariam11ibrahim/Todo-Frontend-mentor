@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useReducer } from "react/cjs/react.development";
+import { useEffect,useReducer } from "react";
 import TasksContext from "./tasks-context";
 
 
@@ -13,7 +12,7 @@ let dummyTasks = [
 ];
 
 let storedTasks = JSON.parse(localStorage.getItem("tasks"));
-storedTasks=storedTasks||dummyTasks
+storedTasks=storedTasks||dummyTasks;
 const activeTasksNumber = storedTasks.reduce((total, task) => !task.done ? total += 1 : total, 0);
 
 const defualtTaskState = {

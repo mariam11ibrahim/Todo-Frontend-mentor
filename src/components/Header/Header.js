@@ -2,7 +2,7 @@ import { useContext } from "react";
 import ThemeContext from "../../Store/theme-context";
 import styles from "./Header.module.scss";
 import ThemeIcon from "./ThemeIcon";
-const Header = ({ }) => {
+const Header = () => {
 
     const themeContext = useContext(ThemeContext);
 

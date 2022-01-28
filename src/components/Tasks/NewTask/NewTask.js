@@ -3,7 +3,7 @@ import {  generateID } from "../../../helpers/helpers";
 import TasksContext from "../../../Store/tasks-context";
 import Card from "../../Card/Card";
 import styles from "./NewTask.module.scss";
-const NewTask = ({onAddingNewTask}) => {
+const NewTask = () => {
 const [newTaskValue,setNewTaskValue]=useState("")
   const handleInputChange = (e) => {
     setNewTaskValue (e.target.value) ;
@@ -22,10 +22,7 @@ const [newTaskValue,setNewTaskValue]=useState("")
     e.preventDefault();
     let task=handelTaskData(newTaskValue);
     tasksContext.addTask(task)
-
     setNewTaskValue("")
-
-
   }
   return (
     <Card className={styles["center"]}>
