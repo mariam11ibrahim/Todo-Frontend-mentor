@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/todo-frontend-mentor/static/css/main.66c3a58e.css",
+    "main.css": "/todo-frontend-mentor/static/css/main.b076a364.css",
     "main.js": "/todo-frontend-mentor/static/js/main.b0053a71.js",
     "static/media/bg-desktop-light.jpg": "/todo-frontend-mentor/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
     "static/media/bg-desktop-dark.jpg": "/todo-frontend-mentor/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
     "index.html": "/todo-frontend-mentor/index.html",
-    "main.66c3a58e.css.map": "/todo-frontend-mentor/static/css/main.66c3a58e.css.map",
+    "main.b076a364.css.map": "/todo-frontend-mentor/static/css/main.b076a364.css.map",
     "main.b0053a71.js.map": "/todo-frontend-mentor/static/js/main.b0053a71.js.map"
   },
   "entrypoints": [
-    "static/css/main.66c3a58e.css",
+    "static/css/main.b076a364.css",
     "static/js/main.b0053a71.js"
   ]
 }
